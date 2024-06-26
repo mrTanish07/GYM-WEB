@@ -1,19 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GYM WEB</title>
     <style>
-        body{
+        body {
+            color: aliceblue;
             margin: 0px;
             padding: 0px;
             background: url("img/pngtree-3d-rendered-gym-equipment-on-a-dark-background-image_3763737.jpg");
         }
+
+        .left {
+            display: inline-block;
+            border: 2px solid violet;
+            position: absolute;
+            left: 33px;
+            top: 20px;
+
+
+        }
+
+        .mid {
+            border: 2px solid greenyellow;
+            display: block;
+            margin: 20px auto;
+            width: 33%;
+
+        }
+
+        .right {
+            display: inline-block;
+            border: 2px solid hotpink;
+            position: absolute;
+            right: 24px;
+            top: 20px;
+
+
+        }
     </style>
 </head>
-<body>
 
-    
+<body>
+    <header class="header">
+        <div class="left"> this is left</div>
+        <div class="mid">this is center</div>
+        <div class="right">this is right</div>
+    </header>
+
+
 </body>
+
 </html>
