@@ -7,27 +7,29 @@
     <title>GYM WEB</title>
     <style>
         body {
-            color: aliceblue;
+            font-family: 'Baloo Bhai', cursive;
+            background: url(img/pngtree-3d-rendered-gym-equipment-on-a-dark-background-image_3763737.jpg);
+            color: white;
             margin: 0px;
             padding: 0px;
-            background: url("img/pngtree-3d-rendered-gym-equipment-on-a-dark-background-image_3763737.jpg");
         }
 
         .left {
             display: inline-block;
-            border: 2px solid violet;
+            border: 2px solid hotpink;
             position: absolute;
-            left: 33px;
+            left: 24px;
             top: 20px;
-
 
         }
 
         .mid {
             border: 2px solid greenyellow;
             display: block;
-            margin: 20px auto;
-            width: 33%;
+            width: 60%;
+            margin: 29px auto;
+            /* border: 2px solid green; */
+
 
         }
 
@@ -40,13 +42,45 @@
 
 
         }
+
+        .navbar {
+            display: inline-block;
+
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 25px;
+
+        }
+
+        .navbar li a {
+            display: inline-block;
+            text-decoration: none;
+            color: aliceblue;
+            padding: 11px 45px;
+
+        }
     </style>
 </head>
 
 <body>
     <header class="header">
-        <div class="left"> this is left</div>
-        <div class="mid">this is center</div>
+
+        <div class="left">
+            this is left
+
+        </div>
+
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="">Home</a></li>
+                <li><a href="">about us</a></li>
+                <li><a href="">Fitness Center</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </div>
+
         <div class="right">this is right</div>
     </header>
 
