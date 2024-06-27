@@ -6,6 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GYM WEB</title>
     <style>
+        header {
+            margin: 2px;
+            border: 0px;
+            padding: 5px;
+        }
+
         body {
             font-family: 'Baloo Bhai', cursive;
             background: url(img/cropped-1920-1080-1146697.jpg);
@@ -19,17 +25,20 @@
             display: inline-block;
             border: 2px solid hotpink;
             position: absolute;
-            left: 24px;
-            top: 20px;
+            left: 12px;
+            top: 15px;
 
         }
 
         .left img {
             width: 122px;
             height: auto;
-            filter: invert(100%);
+            filter: invert(0%);
             margin-bottom: -31%;
             margin-left: -8%;
+        }
+        .left img:hover {
+            filter: invert(100%);
         }
 
         .mid {
@@ -46,8 +55,8 @@
             display: inline-block;
             border: 2px solid hotpink;
             position: absolute;
-            right: 24px;
-            top: 20px;
+            right: 19px;
+            top: 43px;
 
 
         }
@@ -67,9 +76,31 @@
             display: inline-block;
             text-decoration: none;
             color: aliceblue;
-            padding: 11px 45px;
+            padding: 11px 55px;
             margin-top: 0px;
 
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: rgb(255, 108, 100);
+        }
+
+        .left div {
+            text-align: center;
+        }
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            background-color: black;
+            color: aliceblue;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: darkgray;
         }
     </style>
 </head>
@@ -85,14 +116,17 @@
 
         <div class="mid">
             <ul class="navbar">
-                <li><a href="">Home</a></li>
+                <li ><a href="" class="active">Home</a></li>
                 <li><a href="">about us</a></li>
                 <li><a href="">Fitness Center</a></li>
                 <li><a href="">Contact Us</a></li>
             </ul>
         </div>
 
-        <div class="right">this is right</div>
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
     </header>
 
 
