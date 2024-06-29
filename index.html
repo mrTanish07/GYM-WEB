@@ -64,7 +64,6 @@
             display: block;
             width: 55%;
             margin: 15px auto;
-            /* border: 2px solid green; */
 
 
         }
@@ -129,6 +128,48 @@
         .btn:hover {
             background-color: darkgray;
         }
+        .container{
+            background-color: black;
+            border: 2px solid green;
+            width: 33%;
+            margin: 70px 70px ;
+            padding: 40px 55px;
+            border-radius: 30px;
+            
+        }
+        div.container h2{
+            display: block;
+            margin: 2px auto;
+            width: 50%;
+            font-size: 17px;
+            padding: 4px 65px;
+
+            
+            font-family: "Poetsen One", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+        .formgroup input{
+            text-align: center;
+            display: block;
+            width: 340px;
+            padding: 4px;
+            border-radius: 30px;
+            border: 2px solid black;
+            margin: 7px auto;
+            font-size: 19px;
+            
+            font-family: "Oswald", sans-serif;
+            font-optical-sizing: auto;
+            font-style : normal;
+        }
+        .formgroup .btn{
+            display: block;
+            width: 50%;
+            margin: 18px auto;
+            border: 2px solid rgb(237, 13, 196);
+        }
+
     </style>
 </head>
 
@@ -155,6 +196,18 @@
             <button class="btn">Email Us</button>
         </div>
     </header>
+    <div class="container">
+        <h2>Join the best GYM of samba</h2>
+        <form action="noaction.php">
+            <div class="formgroup">
+                <input type="text" name="" placeholder="Enter your name">
+                <input type="text" name="" placeholder="Enter your name">
+                <input type="text" name="" placeholder="Enter your name">
+                <input type="text" name="" placeholder="Enter your name">
+                <button class="btn">Submit</button>
+            </div>
+        </form>
+    </div>
 
 
 </body>
